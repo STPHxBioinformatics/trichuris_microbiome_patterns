@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Compute country/region homogeneity of strain clusters per species.
+Compute country/region homogeneity of strain clusters per species - merged
 
 Inputs:
   - A directory of per-species cluster files (from your previous step), each with:
