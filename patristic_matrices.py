@@ -2,7 +2,7 @@
 """
 Compute patristic (cophenetic) distance matrices from Newick trees using Biopython.
 
-Works on Python 3.13+ (no ete3 dependency).
+Works on Python 3.13+ (no ete3 dependency) - merged
 
 Usage:
   python3 patristic_matrices.py \
