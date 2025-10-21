@@ -47,27 +47,27 @@ abundance_table_6 <- t(abundance_table_6)
 
 # Keep only the top 50 species with the highest average abundance
 avg_abundance_1 <- colMeans(abundance_table_1)
-top_50_species_1 <- names(sort(avg_abundance_1, decreasing = TRUE))[1:200]
+top_50_species_1 <- names(sort(avg_abundance_1, decreasing = TRUE))[1:50]
 abundance_table_1 <- abundance_table_1[, top_50_species_1, drop = FALSE]
 
 avg_abundance_2 <- colMeans(abundance_table_2)
-top_50_species_2 <- names(sort(avg_abundance_2, decreasing = TRUE))[1:200]
+top_50_species_2 <- names(sort(avg_abundance_2, decreasing = TRUE))[1:50]
 abundance_table_2 <- abundance_table_2[, top_50_species_2, drop = FALSE]
 
 avg_abundance_3 <- colMeans(abundance_table_3)
-top_50_species_3 <- names(sort(avg_abundance_3, decreasing = TRUE))[1:200]
+top_50_species_3 <- names(sort(avg_abundance_3, decreasing = TRUE))[1:50]
 abundance_table_3 <- abundance_table_3[, top_50_species_3, drop = FALSE]
 
 avg_abundance_4 <- colMeans(abundance_table_4)
-top_50_species_4 <- names(sort(avg_abundance_4, decreasing = TRUE))[1:200]
+top_50_species_4 <- names(sort(avg_abundance_4, decreasing = TRUE))[1:50]
 abundance_table_4 <- abundance_table_4[, top_50_species_4, drop = FALSE]
 
 avg_abundance_5 <- colMeans(abundance_table_5)
-top_50_species_5 <- names(sort(avg_abundance_5, decreasing = TRUE))[1:200]
+top_50_species_5 <- names(sort(avg_abundance_5, decreasing = TRUE))[1:50]
 abundance_table_5 <- abundance_table_5[, top_50_species_5, drop = FALSE]
 
 avg_abundance_6 <- colMeans(abundance_table_6)
-top_50_species_6 <- names(sort(avg_abundance_6, decreasing = TRUE))[1:200]
+top_50_species_6 <- names(sort(avg_abundance_6, decreasing = TRUE))[1:50]
 abundance_table_6 <- abundance_table_6[, top_50_species_6, drop = FALSE]
 
 # Read the list of taxa to highlight
@@ -385,3 +385,4 @@ write.csv(properties_g6_df, file.path(output_folder, paste0('network_properties_
 # export_to_cytoscape(g1, paste0('Network_', abundance_file_name_1))
 # export_to_cytoscape(g2, paste0('Network_', abundance_file_name_2))
 # export_to_cytoscape(combined_graph, paste0('Combined_Network_', abundance_file_name_1, '_', abundance_file_name_2))
+
