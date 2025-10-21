@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Cluster patristic (cophenetic) distance matrices into discrete strain clusters
-and summarize per-species clustering quality metrics.
+and summarize per-species clustering quality metrics - merged
 
 Inputs:
   - A directory containing CSV/TSV square distance matrices (rows=cols=sample IDs).
